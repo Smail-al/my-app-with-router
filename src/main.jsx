@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
+import Article from "./pages/Article";
 
 // page components
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
           path: "/about",
           element: <About />,
         },
+        {
+        path: "/articles/:id",
+        element: <Article/>
+        }
       ],
     },
   ]);
